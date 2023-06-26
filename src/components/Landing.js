@@ -16,7 +16,7 @@ const Landing = () => {
 
     const [coins,setCoins] = useState([]);
     const [search,setSearch] = useState('');
-    console.log(coins)
+    
 
     useEffect(() => {
         const fetchAPI = async () => {
@@ -34,7 +34,7 @@ const Landing = () => {
     }
 
     const searchCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()));
-    console.log(searchCoins)
+    
 
     return (
         <>
